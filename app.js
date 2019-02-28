@@ -4,7 +4,7 @@ const { getLocation } = require("./controllers");
 
 // app.get(getLocation);
 app.use(bodyParser.json());
+app.get('/', getLocation)
 
-app.post("/", getLocation);
 
 module.exports = app;

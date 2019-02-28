@@ -1,4 +1,4 @@
 exports.getLocation = (req, res, next) => {
-  console.log(req.body);
-  res.send("good");
+  console.log("we got a request");
+  res.send({ msg: "England" });
 };
